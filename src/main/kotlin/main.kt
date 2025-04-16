@@ -1,5 +1,5 @@
 fun main(){
-    val x: Double = 10.0 // using double numbers
-    val y: Double = 9.0
-    println(x/y)
+    val x = 11
+    val y = 9
+    println(x%y) // residual operator
 }
