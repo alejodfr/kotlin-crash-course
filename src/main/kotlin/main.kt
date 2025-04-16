@@ -1,5 +1,5 @@
 fun main(){
-    val x = 10f // using float numbers
-    val y = 9f
+    val x: Double = 10.0 // using double numbers
+    val y: Double = 9.0
     println(x/y)
 }
