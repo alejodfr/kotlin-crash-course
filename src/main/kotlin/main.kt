@@ -5,5 +5,7 @@ fun main(){
     if (inputAsInteger != null) {
         val isEven = inputAsInteger % 2 == 0
         println("is even: $isEven")
+    } else {
+        println("Enter a valid number!")
     }
 }
