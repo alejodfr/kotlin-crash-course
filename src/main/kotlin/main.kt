@@ -4,7 +4,11 @@ fun main(){
     val inputAsInteger = input.toIntOrNull()
     if (inputAsInteger != null) {
         val isEven = inputAsInteger % 2 == 0
-        println("is even: $isEven")
+        if (isEven) {
+            println("The number is Even")
+        } else {
+            println("The number is Odd")
+        }
     } else {
         println("Enter a valid number!")
     }
