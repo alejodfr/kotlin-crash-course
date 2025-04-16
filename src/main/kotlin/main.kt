@@ -1,6 +1,7 @@
 fun main(){
     val x = 12
-    val y = 11
-    println("Is x an even number? ${x % 2 == 0}") //el operador $ se usa para interpolar variables dentro de cadenas de variables (string)
+    val y = 12
+    val areBothEven = x % 2 == 0 && y % 2 == 0 //creando una variable para evaluar 2 condiciones
+    println("Is x an even number? $areBothEven")
 
 }
