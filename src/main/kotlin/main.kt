@@ -1,5 +1,6 @@
 fun main(){
     val x = 11
     val y = 9
-    println(x > y) // esta comparacion se transforma en un boleano (devuelve el valor true)
+    println(x % 2 == 0) // poner la condicion si el reminder de la division es igual a cero de una respuesta falsa o verdadera
+
 }
