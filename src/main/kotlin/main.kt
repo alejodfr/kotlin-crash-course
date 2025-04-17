@@ -3,14 +3,14 @@ fun main(){
     val amountOfNumbers = readln().toIntOrNull() ?: 0
 
 
-    var numbers = intArrayOf()
+    val numbers = mutableListOf<Int>()
     var i = 0
     while (i < amountOfNumbers) {
         println("Please enter number #${i + 1}")
         val number = readln().toIntOrNull() ?: continue
-        numbers += number
+        numbers.add(number)
         i++
     }
 
-    println("Numbers: ${numbers.contentToString()}")
+    println("Numbers: $numbers")
 }
