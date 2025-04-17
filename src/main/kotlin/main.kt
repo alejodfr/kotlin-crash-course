@@ -2,7 +2,7 @@ fun main(){
     println("Enter a string:")
     val input = readln()
 
-    val reversed = reversed()
+    val reversed = reversed(input)
     println(reversed)
 
     if(input == reversed){
