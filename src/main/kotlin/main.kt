@@ -2,7 +2,10 @@ fun main(){
     println("Enter a string:")
     val input = readln()
 
-    for (character in input){
-        println(character)
+    val finalString = buildString {
+        for (i in input.lastIndex downTo 0){
+            append(input[i])
+        }
     }
+    println(finalString)
 }
