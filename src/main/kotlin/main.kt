@@ -1,28 +1,9 @@
-import java.util.function.Predicate
+
 
 fun main(){
-    println("Enter a string:")
-    val input = readln()
-
-    val favoriteNumbers = intArrayOf(1,2,3,69)
-    val evenNumbers = favoriteNumbers.map {
-        it * it
-    }
-
-    val letterOnly = input.filter {
-        it.isLetter()
-    }
-
-
-    println(evenNumbers)
+    val rect1 = Rectangle( width = 5, height = 7)
+    println(rect1.width)
+    print(rect1.height)
 }
 
-fun String.myFilter(predicate: (Char) -> Boolean): String {
-    return buildString {
-        for(char in this@myFilter) {
-            if (predicate(char)){
-                append(char)
-            }
-        }
-    }
-}
+class Rectangle (val width: Int, val height: Int) // the constructor odf the class
