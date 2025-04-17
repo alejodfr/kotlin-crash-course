@@ -1,4 +1,13 @@
 fun main(){
+    println("Choose a numbre from my array")
+    val input = readln()
+    val inputAsInteger = input.toIntOrNull()
     val favoriteNumbers = intArrayOf(1, 2, 3, 69)
-    println(favoriteNumbers.getOrNull(3)) // otra forma de obtener los numeros, si pones un numero mayor al tamanio del arreglo dara null
+
+    if (inputAsInteger != null && inputAsInteger < favoriteNumbers.size){
+        println("Your number is ${favoriteNumbers[inputAsInteger]}")
+    } else {
+        println("that index does not exist")
+    }
+
 }
