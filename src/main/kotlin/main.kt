@@ -1,6 +1,6 @@
 import kotlin.math.PI
 import kotlin.math.sqrt
-
+// abstract class
 
 fun main(){
     val rect1 = Rectangle( width = 5f, height = 7f)
