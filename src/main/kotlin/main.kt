@@ -4,13 +4,12 @@ fun main(){
 
 
     val numbers = mutableListOf<Int>()
-    var i = 0
-    while (i < amountOfNumbers) {
+    for (i in 0 until amountOfNumbers){
         println("Please enter number #${i + 1}")
         val number = readln().toIntOrNull() ?: continue
         numbers.add(number)
-        i++
     }
+
 
     println("Numbers: $numbers")
 }
