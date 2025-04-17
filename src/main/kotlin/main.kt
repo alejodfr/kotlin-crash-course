@@ -2,7 +2,7 @@ fun main(){
     println("Enter a string:")
     val input = readln()
 
-    val reversed = reversed(input)
+    val reversed = input.reversed()
     println(reversed)
 
     if(input == reversed){
@@ -10,10 +10,10 @@ fun main(){
     }
 }
 
-fun reversed(stringToReverse: String = "hello world"): String{
+fun String.reversed(): String{
     val finalString = buildString {
-        for (i in stringToReverse.lastIndex downTo 0){
-            append(stringToReverse[i])
+        for (i in this@reversed.lastIndex downTo 0){
+            append(this@reversed[i])
         }
     }
     return finalString
