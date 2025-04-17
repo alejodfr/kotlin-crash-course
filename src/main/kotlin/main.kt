@@ -3,14 +3,14 @@ fun main(){
     val amountOfNumbers = readln().toIntOrNull() ?: 0
 
 
-    var sum = 0
+    var numbers = intArrayOf()
     var i = 0
     while (i < amountOfNumbers) {
         println("Please enter number #${i + 1}")
         val number = readln().toIntOrNull() ?: continue
-        sum += number
+        numbers += number
         i++
     }
 
-    println("the total sum is $sum")
+    println("Numbers: ${numbers.contentToString()}")
 }
