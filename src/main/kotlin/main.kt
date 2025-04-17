@@ -1,9 +1,13 @@
 fun main(){
     println("Enter a string:")
     val input = readln()
-    println("La palabra escogida es: $input")
+
     val reversed = reversed(input)
-    println("Si la invertimos es: $reversed")
+    println(reversed)
+
+    if(input == reversed(input)){
+        println("Thats a palindrome!")
+    }
 }
 
 fun reversed(stringToReverse: String): String{
