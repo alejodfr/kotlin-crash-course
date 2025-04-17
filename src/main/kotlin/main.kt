@@ -10,6 +10,7 @@ fun main(){
         numbers.add(number)
     }
 
-
-    println("Numbers: $numbers")
+    for(number in numbers) {
+        println("Numbers: $number")
+    }
 }
