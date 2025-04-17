@@ -1,3 +1,5 @@
+import java.util.function.Predicate
+
 fun main(){
     println("Enter a string:")
     val input = readln()
@@ -8,5 +10,17 @@ fun main(){
     val letterOnly = input.filter {
         it.isLetter()
     }
-    println(evenNumbers)
+
+
+    println(letterOnly)
+}
+
+fun String.myFilter(predicate: (Char) -> Boolean): String {
+    return buildString {
+        for(char in this@myFilter) {
+            if (predicate(char)){
+                append(char)
+            }
+        }
+    }
 }
