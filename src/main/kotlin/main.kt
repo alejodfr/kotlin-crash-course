@@ -5,9 +5,9 @@ import kotlin.math.sqrt
 fun main(){
     val rect1 = Rectangle( width = 5f, height = 7f)
     val circle = Circle(radius = 5f)
-    val shape = Shape()
+    rect1.inc()
 
-    println(sumAreas(rect1, circle))
+    println(rect1.counter)
 }
 
 fun sumAreas(vararg shapes: Shape): Double{
@@ -17,9 +17,14 @@ fun sumAreas(vararg shapes: Shape): Double{
 }
 
 abstract class Shape {
+    var counter = 0
     abstract val area: Float
     abstract val circumference: Float
+    fun inc(){
+        counter++
+    }
 }
+
 
 /*interface Shape{
     val area: Float
