@@ -3,14 +3,11 @@ import kotlin.math.sqrt
 
 fun main(){
     val rect1 = Rectangle( width = 5f, height = 7f)
-    val rect2 = Rectangle(width = 5f, height = 7f)
-    val rect3 = Rectangle(width = 5f, height = 8f)
+    val rect2 = rect1.copy(height = 10f) // usar la funcion .copy
 
-    println(rect1)
-    println(rect3)
+    println(rect2)
 
     println(rect1==rect2)
-    println(rect1==rect3)
 }
 
 
