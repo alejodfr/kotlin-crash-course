@@ -1,13 +1,16 @@
 fun main(){
-    println("Choose a numbre from my array")
-    val input = readln()
-    val inputAsInteger = input.toIntOrNull()
-    val favoriteNumbers = intArrayOf(1, 2, 3, 69)
+    println("how many numbers you will enter?")
+    val amountOfNumbers = readln().toIntOrNull() ?: 0
 
-    if (inputAsInteger != null && inputAsInteger in 0..favoriteNumbers.lastIndex){
-        println("Your number is ${favoriteNumbers[inputAsInteger]}")
-    } else {
-        println("that index does not exist")
+
+    var sum = 0
+    var i = 0
+    while (i < amountOfNumbers) {
+        println("Please enter number #${i + 1}")
+        val number = readln().toIntOrNull() ?: 0
+        sum += number
+        i++
     }
 
+    println("the total sum is $sum")
 }
