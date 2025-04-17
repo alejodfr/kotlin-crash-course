@@ -3,12 +3,12 @@ fun main(){
     val input = readln()
     val inputAsInteger = input.toIntOrNull()
     if (inputAsInteger != null) {
-        val isEven = inputAsInteger % 2 == 0
-        if (isEven) {
-            println("The number is Even")
+        val output = if (inputAsInteger % 2 == 0){
+            "the number is even"
         } else {
-            println("The number is Odd")
+            "The number is odd"
         }
+        println(output)
     } else {
         println("Enter a valid number!")
     }
