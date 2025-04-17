@@ -1,9 +1,9 @@
 fun main(){
     println("Enter a string:")
     val input = readln()
-
-    reversed(input)
-
+    println("La palabra escogida es: $input")
+    val reversed = reversed(input)
+    println("Si la invertimos es: $reversed")
 }
 
 fun reversed(stringToReverse: String): String{
