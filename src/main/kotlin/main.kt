@@ -6,11 +6,11 @@ fun main(){
 
 }
 
-fun reversed(stringToReverse: String){
+fun reversed(stringToReverse: String): String{
     val finalString = buildString {
         for (i in stringToReverse.lastIndex downTo 0){
             append(stringToReverse[i])
         }
     }
-    println(finalString)
+    return finalString
 }
